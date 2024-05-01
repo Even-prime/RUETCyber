@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs-RUETCyber</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="icon" type="image/x-icon" href="./images/title.png">
+    <script src="blog.js"></script>
+</head>
+<body>
+    <div class="header">
+      
+     
+
+   <header class="header-content">
+
+    <a href="#logo" class="logo">
+      <img src="./images/logo.png" alt="logo" class="logo-icon" >
+      <span class="logo-text" >RUETCyber</span>
+  </a>
+
+<nav class="nav">
+    
+    <a href="index.html" class="nav-link " >Home</a>
+    <a href="blog.html" class="nav-link">Blog</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="resources.html" class="nav-link">Resources</a>
+    
+    
+  
+</nav>
+<a href="contact.html" class="contact-button">Contact Us</a>
+
+
+<button type="button" class="menu-button" id="menuBtn">
+  <img src="./images/Hamburger.svg" alt="menuButton" class="menu-icon" onclick="showSidebar()"/>
+</button>
+
+
+   </header>
+
+   <nav class="nav2">
+    <ul class="sidebar">
+      <li><a href="#" class="pages" onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+
+      <li > <a href="index.html" class="pages">Home</a></li>
+      <li > <a href="blog.html" class="pages">Blog</a></li>
+      <li > <a href="about.html" class="pages">About</a></li>
+      <li > <a href="resources.html" class="pages">Resources</a></li>
+      <li> <a href="contact.html" class="pages">Contact Us</a></li>
+    </ul>
+    
+  </nav>
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      const menuIcon = document.querySelector('.menu-icon');
+      
+      // Toggle the display of the sidebar
+      if (sidebar.style.display === 'none' || !sidebar.style.display) {
+          sidebar.style.display = 'block';
+          menuIcon.classList.add('opened'); // Optionally, add a class to indicate that the sidebar is opened
+      } else {
+          sidebar.style.display = 'none';
+          menuIcon.classList.remove('opened'); // Optionally, remove the class to indicate that the sidebar is closed
+      }
+  }
+  
+  function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+}
+
+  
+
+  
+  
+  </script>
+
+
+    
+    <div class="First_content">
+        <section class="main-section">
+            <div class="content-left">
+              <p class="section-label"></p>
+              <h1 class="section-title">CTF কী এবং এর আদ্যোপান্ত ( প্রথম পর্ব)</h1>
+              <p  class="section-description">হ্যাকিং শব্দটা শুনলেই কেমন যেন অদ্ভুত অনুভূতি হয়, এই অনুভূতি কিছুটা আসে মূলত নিষিদ্ধ কিছু করার প্রতি আকাঙ্ক্ষা থেকে। কোনো কম্পিউটার সিস্টেমে ঢুকে সবার অগোচরে কোনো একটি তথ্য বের করে নিয়ে আসাকেই সহজ ভাষায় হ্যাকিং বলে থাকে। কিন্তু এই হ্যাকিংকে বিভিন্ন মুভি, সিরিজে এমনভাবে উপস্থাপন করা হয় যে এটি নিয়ে সকলেরই একটা নেগেটিভ ধারনা তৈরি হয়ে গেছে। কিন্তু একুশ শতকের এই দুনিয়ায় হ্যাকিং একটা মহামূল্যবান স্কিল হিসেবে পরিণত হয়েছে (অবশ্যই হ্যাকিংটা ইথিক্যাল হতে হবে)। আর এই হ্যাকিং স্কিলকে অনুশীলন করার জন্য যে প্রতিযোগিতার আয়োজন করা হয় তাকেই মুলত CTF কম্পিটিশন বলে যার পূর্ণরূপ হচ্ছে Capture The flag!
+
+                অন্য কম্পিটিশনগুলোর মত CTF ও বিভিন্ন লেভেলের হয়ে থাকে। প্রফেশনাল লেভেলের CTF কম্পিটিশন একটু কঠিন হয়ে থাকে কিন্তু এখানে প্রাইজ মানি অনেক বেশি হয়, আবার একটু নিচের লেভেল এর CTF কম্পিটিশনগুলোতে তুলনামূলক সহজ প্রবলেম থাকে।
+                
+                এখন সবার মাথায় প্রশ্ন আসতে পারে, প্রবলেমগুলো কেমন হয় কিংবা এই প্রবলেমগুলো সলভ কিভাবে করা হয়। তাহলে এখন দেখা যাক 
+                
+                <p class="full-article" style="display: none;">
+                  হ্যাকিং শব্দটা শুনলেই কেমন যেন অদ্ভুত অনুভূতি হয়, এই অনুভূতি কিছুটা আসে মূলত নিষিদ্ধ কিছু করার প্রতি আকাঙ্ক্ষা থেকে। কোনো কম্পিউটার সিস্টেমে ঢুকে সবার অগোচরে কোনো একটি তথ্য বের করে নিয়ে আসাকেই সহজ ভাষায় হ্যাকিং বলে থাকে। কিন্তু এই হ্যাকিংকে বিভিন্ন মুভি, সিরিজে এমনভাবে উপস্থাপন করা হয় যে এটি নিয়ে সকলেরই একটা নেগেটিভ ধারনা তৈরি হয়ে গেছে। কিন্তু একুশ শতকের এই দুনিয়ায় হ্যাকিং একটা মহামূল্যবান স্কিল হিসেবে পরিণত হয়েছে (অবশ্যই হ্যাকিংটা ইথিক্যাল হতে হবে)। আর এই হ্যাকিং স্কিলকে অনুশীলন করার জন্য যে প্রতিযোগিতার আয়োজন করা হয় তাকেই মুলত CTF কম্পিটিশন বলে যার পূর্ণরূপ হচ্ছে Capture The flag!
+
+                  অন্য কম্পিটিশনগুলোর মত CTF ও বিভিন্ন লেভেলের হয়ে থাকে। প্রফেশনাল লেভেলের CTF কম্পিটিশন একটু কঠিন হয়ে থাকে কিন্তু এখানে প্রাইজ মানি অনেক বেশি হয়, আবার একটু নিচের লেভেল এর CTF কম্পিটিশনগুলোতে তুলনামূলক সহজ প্রবলেম থাকে।
+                  
+                  এখন সবার মাথায় প্রশ্ন আসতে পারে, প্রবলেমগুলো কেমন হয় কিংবা এই প্রবলেমগুলো সলভ কিভাবে করা হয়। তাহলে এখন দেখা যাক 
+                Jeopardy Style CTF কী? এই স্টাইলটাই মূলত ফলো করা হয় বেশিরভাগ তাই আলোচনাটা এটাতেই সীমাবদ্ধ থাকবে।
+                
+                Jeopardy Style CTF এ অনেকগুলো চ্যালেঞ্জ থাকে এবং এই চ্যালেঞ্জগুলো বিভিন্নধরনের হ্যাকিং স্কিল ব্যাবহার করে সমাধান করতে হয়। আর প্রত্যেকটি সঠিক সমাধনের জন্য পয়েন্টন্ট পাওয়া যায়। নির্দিষ্ট সময় পর যে টিমের পয়েন্ট সবচেয়ে বেশি হয় সেই মূলত প্রথম এরপর দ্বিতীয় এভাবে লিডারবোর্ড তৈরি হয় ।
+                
+                এখানে একটা মজার ব্যাপার হচ্ছে চ্যালেঞ্জ সলভ করার জন্য আমাদেরকে কিন্তু ফ্ল্যাগ খুঁজে বের করতে হবে। এজন্যই কিন্তু প্রতিযোগিতার নাম Capture The Flag.
+                
+                ফ্ল্যাগটা মূলত একটা সিক্রেট কোড যা কোনো ফাইল বা সার্ভারে লুকিয়ে রাখা আছে, আর সেটা আমাদেরকে বিভিন্ন টুল এবং টেকনিক ব্যাবহার করে খুঁজে বের করতে হবে।
+                
+                এখন আসা যাক চ্যালেঞ্জগুলোর ব্যাপারে। Jeopardy Style CTF এ চ্যালেঞ্জগুলোকে বিভিন্ন ক্যাটাগরিতে ভাগ করা হয়ে থাকে। নিচে সংক্ষিপ্তভাবে মেইন ক্যাটাগরিতে পরিচিতি দেয়া হলোঃ <br>
+                
+                • Cryptography: এই ক্যাটাগরির চ্যালেঞ্জে মূলত এনক্রিপ্ট করা ফাইলকে ডিক্রিপ্ট করতে হয়। <br>
+                • Steganography: এই ধরনের চ্যালেঞ্জ এ কোনো একটা ফাইল বা ইমেজ এর মধ্যে লুকানো ফ্ল্যাগ খুঁজে বের করতে হয়। <br>
+                • Binary: এখানে একটা প্রোগ্রামের ভালনারিবিলিটি খুঁজে বের করে সেটাকে এক্সপ্লয়েট করতে হয়। <br>
+                • Web: এই প্রবলেমগুলোতে ওয়েবপেজকে এক্সপ্লয়েট করে ফ্ল্যাগ খুঁজে বের করতে হয়। <br>
+                • PWN: এই ক্যাটাগরিতে কোনো সার্ভারকে এক্সপ্লয়েট করে সেখান থেকে ফ্ল্যাগ খুঁজে বের করতে হয়। <br>
+                
+                এই ক্যাটাগরিগুলো ছাড়াও জেনারেল ক্যাটাগরির প্রবলেম থাকে যেগুলো সলভ করার জন্য টেকনিকাল নলেজ এর চেয়ে ক্রিটিক্যাল থিঙ্কিং বেশি গুরুত্বপূর্ণ। <br>
+                
+                তো আজকে এই পর্যন্তই থাক। এর পর্বগুলোতে CTF প্র্যাকটিস করার কিংবা কিভাবে শিখবো সেগুলো নিয়ে কথা হবে । <br>
+                
+                ততদিন #happyhacking #ruetcyber <br>
+                
+                Author: Mostain Rishad (ETE 20)</p> <br>
+              </p>
+              <button class="read-more-btn">Read More</button>
+              <button class="show-less-btn" style="display: none;">Show Less</button> <!-- Add Show Less button -->
+            </div>
+            <div class="content-right">
+             <div class="image-container1">
+                <img src="./images/blog.jpg" alt="Cyber-image"class="section-image">
+                
+             </div>
+            </div>
+        </section>
+    </div>
+    </div>
+    <div class="footer">
+    
+      <div class="im-container">
+        <a href="https://www.facebook.com/RUETCyber" target="_blank"><img src="./images/fb1.jpg" alt="facebook" class="join"></a>
+          <a href="https://www.linkedin.com/company/ruet-cyber/" target="_blank"><img src="./images/linkdin.jpeg" alt="linkdin" class="join"></a>
+          <a href="https://t.me/+EvIjDCcFCY1hMTA1" target="_blank"><img src="./images/telegram.jpeg" alt="telegram" class="join"></a>
+        <a href="https://discord.gg/7vDdVyKw78" target="_blank"><img src="./images/discord.jpeg" alt="Discord" class="join"></a>
+      </div>
+      <div class="footer-text">
+        <p>Copyright 2024 © RUET Cyber Security Club .All rights reserved</p>
+      </div>
+    </div>
+      </div>
+    </body>
+    </html>
+

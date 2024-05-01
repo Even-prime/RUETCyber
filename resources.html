@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources-RUETCyber</title>
+    <link rel="stylesheet" href="resources.css">
+    <link rel="icon" type="image/x-icon" href="./images/title.png">
+    
+</head>
+<body>
+    <div class="header">
+      
+     
+
+   <header class="header-content">
+
+    <a href="#logo" class="logo">
+      <img src="./images/logo.png" alt="logo" class="logo-icon" >
+      <span class="logo-text" >RUETCyber</span>
+  </a>
+
+<nav class="nav">
+    
+    <a href="index.html" class="nav-link " >Home</a>
+    <a href="blog.html" class="nav-link">Blog</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="resources.html" class="nav-link">Resources</a>
+    
+    
+  
+</nav>
+<a href="contact.html" class="contact-button">Contact Us</a>
+
+
+<button type="button" class="menu-button" id="menuBtn">
+  <img src="./images/Hamburger.svg" alt="menuButton" class="menu-icon" onclick="showSidebar()"/>
+</button>
+
+
+   </header>
+
+   <nav class="nav2">
+    <ul class="sidebar">
+      <li><a href="#" class="pages" onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+
+      <li > <a href="index.html" class="pages">Home</a></li>
+      <li > <a href="blog.html" class="pages">Blog</a></li>
+      <li > <a href="about.html" class="pages">About</a></li>
+      <li > <a href="resources.html" class="pages">Resources</a></li>
+      <li> <a href="contact.html" class="pages">Contact Us</a></li>
+    </ul>
+    
+  </nav>
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      const menuIcon = document.querySelector('.menu-icon');
+      
+      // Toggle the display of the sidebar
+      if (sidebar.style.display === 'none' || !sidebar.style.display) {
+          sidebar.style.display = 'block';
+          menuIcon.classList.add('opened'); // Optionally, add a class to indicate that the sidebar is opened
+      } else {
+          sidebar.style.display = 'none';
+          menuIcon.classList.remove('opened'); // Optionally, remove the class to indicate that the sidebar is closed
+      }
+  }
+  
+  function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+}
+
+  
+
+  
+  
+  </script>
+
+<div class="main_content">
+  <div class="websites">
+    <h2 class="Web_Heading">Best Websites for Pacticing Cybersecurity </h2>
+    <div class="web_container">
+      <button class="web"><a href="https://tryhackme.com/" target="_blank" class="web_name">Try Hack Me</a></button>
+      <button class="web"><a href="https://www.hackthebox.com/" target="_blank" class="web_name">Hack The Box</a></button>
+      <button class="web"><a href="www.picoctf.org " target="_blank" class="web_name">PicoCTF</a></button>
+      <button class="web"><a href="https://ctftime.org/" target="_blank" class="web_name">CTF TIMES</a></button>
+      <button class="web"><a href="https://cybertalents.com/ " target="_blank" class="web_name">CyberTalents</a></button>
+      <button class="web"><a href="https://cryptohack.org/" target="_blank" class="web_name">Cryptohack</a></button>
+    
+    </div>
+   
+  </div>
+
+
+  <div class="Youtubes">
+    <h2 class="Web_Heading">Helpful Youtube Channels </h2>
+    <div class="web_container">
+      <button class="web"><a href="https://www.youtube.com/@HackerSploit" target="_blank" class="web_name">HackerSploit</a></button>
+      <button class="web"><a href="https://www.youtube.com/@NullByteWHT" target="_blank" class="web_name">NullByteWHT</a></button>
+      <button class="web"><a href="https://www.youtube.com/@NetworkChuck " target="_blank" class="web_name">NetworkChuck</a></button>
+      <button class="web"><a href="https://www.youtube.com/@_JohnHammond" target="_blank" class="web_name">JohnHammond</a></button>
+      <button class="web"><a href="https://www.youtube.com/@edurekaIN " target="_blank" class="web_name">EdurekaIN</a></button>
+      <button class="web"><a href="https://www.youtube.com/@infosecbd" target="_blank" class="web_name">Infosecbd"</a></button>
+    
+    </div>
+   
+  </div>
+
+
+
+
+    <h2 class="session_heading">Online Sessions </h2>
+    <div class="online_resources">
+        
+      
+             <div class="session">
+                 <div class="videos">
+                <iframe width="350" height="200" src="https://www.youtube.com/embed/iNZP67Ki7J4?si=Tq-aLMzSKE89q-I-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video_shape"></iframe>  
+                 </div>
+                 <p class="topic">Session Topic:Introduction to Linux and CTF  </p>
+                <button class="download_btn"><a href="https://drive.google.com/drive/folders/1eD4czyKlgBF64v4avwudGtzGizpTv2I5?usp=sharing" ><p class="download_text">Download Sessions PDF</p></a></button>
+             </div> 
+              
+             <div class="session">
+                <div class="videos">
+                <iframe width="350" height="200" src="https://www.youtube.com/embed/KwkN5pi-VA0?si=OkG7fIDZogW2foaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video_shape"></iframe>
+                </div>
+                <p class="topic">Session Topic:Cryptography & Stegnography </p>
+                 <button class="download_btn"><a href="https://drive.google.com/drive/folders/18dARSiAsTN8y-sT-O2RN-xYJFWoDxH6Y?usp=sharing"><p class="download_text">Download Sessions PDF </p></a></button></a></button>
+             </div>
+             
+    </div>
+    <h2 class="session_heading">Offline Sessions </h2>
+    <div class="online_resources">
+        
+      
+             <div class="session">
+                 <div class="videos">
+                <img src="./images/ofline1.jpg" alt=""   class="photo_shape"  >
+                 </div>
+                 <p class="topic">Session Topic:Web Security  </p>
+                <button class="download_btn"><a href="https://drive.google.com/file/d/16GQ2FNwGDf94uZ8QHZSqXaShCHX-a4wH/view?usp=sharing" ><p class="download_text">Download Sessions PDF</p></a></button>
+             </div>  
+              
+             <div class="session">
+                <div class="videos">
+                  <img src="./images/ofline2.jpg" alt=""   class="photo_shape"  >
+              </div>
+              <p class="topic">Session Topic:Cybersecurity  Awareness </p>
+                 <button class="download_btn"><a href="https://docs.google.com/presentation/d/1rMDK0AjjUOlScEgQavlY_xZFF1uKnoDQ/edit?usp=sharing&ouid=117550392660722071632&rtpof=true&sd=true"><p class="download_text">Download Sessions PDF </p></a></button></a></button>
+             </div>
+             
+    </div>
+
+    <div class="notice">
+      <p class="notice_text">NB: Dear RUET Cyber Security Club community For security reason, certain online resources are restricted.But fear not, all available onsite!</p>
+    </div>
+</div>
+
+
+
+
+    <div class="footer">
+    
+      <div class="im-container">
+        <a href="https://www.facebook.com/RUETCyber" target="_blank"><img src="./images/fb1.jpg" alt="facebook" class="join"></a>
+          <a href="https://www.linkedin.com/company/ruet-cyber/" target="_blank"><img src="./images/linkdin.jpeg" alt="linkdin" class="join"></a>
+          <a href="https://t.me/+EvIjDCcFCY1hMTA1" target="_blank"><img src="./images/telegram.jpeg" alt="telegram" class="join"></a>
+        <a href="https://discord.gg/7vDdVyKw78" target="_blank"><img src="./images/discord.jpeg" alt="Discord" class="join"></a>
+      </div>
+      <div class="footer-text">
+        <p>Copyright 2024 © RUET Cyber Security Club .All rights reserved</p>
+      </div>
+    </div>
+      </div>
+    </body>
+    </html>
+

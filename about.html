@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-RUETCyber</title>
+    <link rel="icon" type="image/x-icon" href="./images/title.png">
+    <link rel="stylesheet" href="about.css">
+    <script src="blog.js"></script>
+</head>
+<body>
+    <div class="header">
+      
+     
+
+   <header class="header-content">
+
+    <a href="#logo" class="logo">
+      <img src="./images/logo.png" alt="logo" class="logo-icon" >
+      <span class="logo-text" >RUETCyber</span>
+  </a>
+
+<nav class="nav">
+    
+    <a href="index.html" class="nav-link " >Home</a>
+    <a href="blog.html" class="nav-link">Blog</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="resources.html" class="nav-link">Resources</a>
+    
+    
+  
+</nav>
+<a href="contact.html" class="contact-button">Contact Us</a>
+
+
+<button type="button" class="menu-button" id="menuBtn">
+  <img src="./images/Hamburger.svg" alt="menuButton" class="menu-icon" onclick="showSidebar()"/>
+</button>
+
+
+   </header>
+
+   <nav class="nav2">
+    <ul class="sidebar">
+      <li><a href="#" class="pages" onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+
+      <li > <a href="index.html" class="pages">Home</a></li>
+      <li > <a href="blog.html" class="pages">Blog</a></li>
+      <li > <a href="about.html" class="pages">About</a></li>
+      <li > <a href="resources.html" class="pages">Resources</a></li>
+      <li> <a href="contact.html" class="pages">Contact Us</a></li>
+    </ul>
+    
+  </nav>
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      const menuIcon = document.querySelector('.menu-icon');
+      
+      // Toggle the display of the sidebar
+      if (sidebar.style.display === 'none' || !sidebar.style.display) {
+          sidebar.style.display = 'block';
+          menuIcon.classList.add('opened'); // Optionally, add a class to indicate that the sidebar is opened
+      } else {
+          sidebar.style.display = 'none';
+          menuIcon.classList.remove('opened'); // Optionally, remove the class to indicate that the sidebar is closed
+      }
+  }
+  
+  function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+}
+
+  
+
+  
+  
+  </script>
+
+    <div class="content">
+        <section class="main-section">
+            <div class="content-left">
+            
+              <h1 class="section-title">ABOUT US</h1>
+              <p  class="section-description">
+                Welcome to the RUET Cyber Security Club, where passion meets prowess in the digital frontier. We're not just a club; we're a dynamic community fostering collaboration, innovation, and skill-building. Through exciting initiatives and hands-on experiences, we empower members to excel in cybersecurity, equipping them with the tools and knowledge to lead in this ever-evolving landscape. Join us as we unravel the mysteries of cybersecurity and shape a safer digital tomorrow.</p>
+                
+            </div>
+            <div class="content-right">
+             <div class="image-container1">
+                <img src="./images/logo1.png" alt="Cyber-image"class="section-image">
+                
+             </div>
+            </div>
+        </section>
+    </div>
+
+
+<div class="objective_section">
+   <div class="objective_title">
+  <p class="headline">OUR OBJECTIVES </p>
+   </div>
+  <div class="main_objective_section">
+    
+    <div class="our_objectives">
+      <img src="./images/objective.jpg" alt="objective" class="objective_image">
+      <p class="para">Educational Excellence</p>
+    </div>
+
+
+
+    <div class="our_objectives">
+      <img src="./images/objective2.jpg" alt="objective" class="objective_image">
+      <p class="para"> CTF Competitions</p>
+    </div>
+
+
+
+    <div class="our_objectives">
+      <img src="./images/objective3.jpg" alt="objective" class="objective_image">
+      <p class="para"> External Collaboration</p>
+    </div>
+
+
+    <div class="our_objectives">
+      <img src="./images/objective4.jpg" alt="objective" class="objective_image">
+      <p class="para"> Skill Development</p>
+    </div>
+
+
+
+
+
+
+  </div>
+
+</div>
+
+   
+    
+
+
+    
+<section class="footer_section"> 
+  <div class="footer">
+    
+
+
+  <section class="footer-content">
+       <div class="im-container">
+         <a href="https://www.facebook.com/RUETCyber"><img src="./images/fb1.jpg" alt="facebook" class="join"></a>
+           <a href="https://www.linkedin.com/company/ruet-cyber/"><img src="./images/linkdin.jpeg" alt="linkdin" class="join"></a>
+           <a href="https://t.me/+EvIjDCcFCY1hMTA1"><img src="./images/telegram.jpeg" alt="telegram" class="join"></a>
+         <a href="https://discord.gg/7vDdVyKw78"><img src="./images/discord.jpeg" alt="Discord" class="join"></a>
+       </div>
+       <div class="footer-text">
+         <p>Copyright 2024 © RUET Cyber Security Club .All rights reserved</p>
+       </div>
+   </section>
+</div></section>
+</body>
+</html>

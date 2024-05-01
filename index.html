@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-RUETCyber</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" type="image/x-icon" href="./images/title.png">
+    <script src="blog.js"></script>
+</head>
+<body>
+    <div class="header">
+      
+     
+
+   <header class="header-content">
+
+    <a href="#logo" class="logo">
+      <img src="./images/logo.png" alt="logo" class="logo-icon" >
+      <span class="logo-text" >RUETCyber</span>
+  </a>
+
+<nav class="nav">
+    
+    <a href="index.html" class="nav-link " >Home</a>
+    <a href="blog.html" class="nav-link">Blog</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="resources.html" class="nav-link">Resources</a>
+    
+    
+  
+</nav>
+<a href="contact.html" class="contact-button">Contact Us</a>
+
+
+<button type="button" class="menu-button" id="menuBtn">
+  <img src="./images/Hamburger.svg" alt="menuButton" class="menu-icon" onclick="showSidebar()"/>
+</button>
+
+
+   </header>
+
+   <nav class="nav2">
+    <ul class="sidebar">
+      <li><a href="#" class="pages" onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+
+      <li > <a href="index.html" class="pages">Home</a></li>
+      <li > <a href="blog.html" class="pages">Blog</a></li>
+      <li > <a href="about.html" class="pages">About</a></li>
+      <li > <a href="resources.html" class="pages">Resources</a></li>
+      <li> <a href="contact.html" class="pages">Contact Us</a></li>
+    </ul>
+    
+  </nav>
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      const menuIcon = document.querySelector('.menu-icon');
+      
+      // Toggle the display of the sidebar
+      if (sidebar.style.display === 'none' || !sidebar.style.display) {
+          sidebar.style.display = 'block';
+          menuIcon.classList.add('opened'); // Optionally, add a class to indicate that the sidebar is opened
+      } else {
+          sidebar.style.display = 'none';
+          menuIcon.classList.remove('opened'); // Optionally, remove the class to indicate that the sidebar is closed
+      }
+  }
+  
+  function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+}
+
+  
+
+  
+  
+  </script>
+
+
+<!-- Main content Starts Here  -->
+
+
+
+    
+    <div class="content">
+        <section class="main-section">
+            <div class="content-left">
+              <p class="section-label">RUET Cyber Security Club</p>
+              <h1 class="section-title">Securing Bytes,Inspiring Innovations</h1>
+              <p  class="section-description">Welcome to RUET Cyber Security Club! Join us in shaping a secure digital future. Connect with like-minded individuals and enhance your skills in cybersecurity. Together, we'll explore the fascinating world of protecting digital systems and data.</p>
+            </div>
+            <div class="content-right">
+             <div class="image-container1">
+                <img src="./images/cyber-security.jpg" alt="Cyber-image"class="section-image">
+                
+             </div>
+            </div>
+        </section>
+    </div>
+    <div class="activ">
+   <h2 class="ctitle">Our  Activities </h2>
+   <div class="grid">
+    <div class="clogo">
+        <img src="./images/seminar.jpeg" alt="seminar" class="imag">
+        <span class="logotext">Seminar</span>
+    </div>
+    <div class="clogo">
+        <img src="./images/contest.jpeg" alt="contest" class="imag" >
+        <span class="logotext">CTF Competition</span>
+    </div>
+    
+    <div class="clogo">
+        <img src="./images/mentor.jpeg" alt="mentorimg"  class="imag">
+        <span class="logotext">Mentorship</span>
+    </div>
+    <div class="clogo">
+        <img src="./images/share.jpeg" alt="shareimg" class="imag" >
+        <span class="logotext">Resources Sharing</span>
+    </div>
+   </div>
+
+    </div>
+    <div class="feature-container">
+    <div class="feature-content">
+        <div class="main-info">
+            <h2 class="feature-title1">Catagories of CTF Compitition </h2>
+            <p class="feature-description">CTF (Capture The Flag) competitions typically encompass various categories of challenges designed to test participants' skills in cybersecurity. Here are some common categories found in CTF competitions.</p>
+
+        </div>
+        <div class="feature-grid">
+            <!-- card 1 -->
+            <div class="feature-card">
+              <div class="icon-container">
+                <img src="./images/f1.jpeg" alt="web" class="feature-svg">
+              </div>
+              <div class="feature-info">
+                <div class="feature-title">Web Explanation</div>
+                <div class="feature-des">Challenges involve exploiting vulnerabilities in web applications, such as SQL injection, Cross-Site Scripting, Cross-Site Request Forgery , and other web-related security flaws.</div>
+
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="feature-card">
+                <div class="icon-container">
+                  <img src="./images/f2.jpg" alt="Crypto" class="feature-svg">
+                </div>
+                <div class="feature-info">
+                  <div class="feature-title">Cryptography</div>
+                  <div class="feature-des">In this category, participants tackle cryptographic algorithms or solving puzzles. Tasks may include decrypting ciphertexts, cracking hashes, or analyzing cryptographic protocols.</div>
+                  
+                </div>
+              </div>
+            <!-- card 3 -->
+            <div class="feature-card">
+                <div class="icon-container">
+                  <img src="./images/f3.jpeg" alt="Reverse" class="feature-svg">
+                </div>
+                <div class="feature-info">
+                  <div class="feature-title">Reverse Engineering </div>
+                  <div class="feature-des">Participants are given executable files or binaries and are tasked with reverse engineering them to understand their functionality, extract hidden flags, or identify vulnerabilities.</div>
+                  
+                </div>
+              </div>
+            <!-- card 4 -->
+            <div class="feature-card">
+                <div class="icon-container">
+                  <img src="./images/f4.jpeg" alt="Forecsic" class="feature-svg">
+                </div>
+                <div class="feature-info">
+                  <div class="feature-title">Forensics</div>
+                  <div class="feature-des">Participants analyze digital artifacts, such as disk images, packet captures, memory dumps, to extract hidden information or solve challenges related to incidents or cyberattacks.</div>
+                  
+                </div>
+              </div>
+            <!-- card 5 -->
+            <div class="feature-card">
+                <div class="icon-container">
+                  <img src="./images/f5.jpeg" alt="Binary" class="feature-svg">
+                </div>
+                <div class="feature-info">
+                  <div class="feature-title">Binary Exploitation (Pwn)</div>
+                  <div class="feature-des">In this category, participants exploit vulnerabilities in compiled programs, such as buffer overflows, format string vulnerabilities, or other memory corruption issues.</div>
+                  
+                </div>
+              </div>
+            <!-- card 6 -->
+            <div class="feature-card">
+                <div class="icon-container">
+                  <img src="./images/f6.jpeg" alt="Steganography " class="feature-svg">
+                </div>
+                <div class="feature-info">
+                  <div class="feature-title">Steganography </div>
+                  <div class="feature-des">Challenges involve hiding messages or data within other files or mediums, such as images, audio files, or network traffic. Participants need to uncover the hidden information.</div>
+                  
+                </div>
+              </div>
+
+
+        </div>
+
+    </div>
+    </div>
+    <div class="footer">
+    
+      <div class="im-container">
+        <a href="https://www.facebook.com/RUETCyber" target="_blank"><img src="./images/fb1.jpg" alt="facebook" class="join"></a>
+          <a href="https://www.linkedin.com/company/ruet-cyber/" target="_blank"><img src="./images/linkdin.jpeg" alt="linkdin" class="join"></a>
+          <a href="https://t.me/+EvIjDCcFCY1hMTA1" target="_blank"><img src="./images/telegram.jpeg" alt="telegram" class="join"></a>
+        <a href="https://discord.gg/7vDdVyKw78" target="_blank"><img src="./images/discord.jpeg" alt="Discord" class="join"></a>
+      </div>
+      <div class="footer-text">
+        <p>Copyright 2024 © RUET Cyber Security Club .All rights reserved</p>
+      </div>
+    </div>
+    </div>
+</body>
+</html>
